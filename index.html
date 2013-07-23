@@ -5,38 +5,36 @@
 
 <body>
 	<pre>
-		<script src="program.js" defer="defer">
+		<script src="program.js" defer>
 		</script>
 	</pre>
-	<div id="myBoxDiv">Hello Div</div>
-	<p />
-	<div id="colorBoxes">
-		<div id="greenDiv">Hello Green</div>
 
-		<div id="blueDiv">Hello Blue</div>  
-
-		<div id="redDiv">Hello Red</div>  
-
-		<div id="orangeDiv">Hello Orange</div>
+	<div class="centeredDiv">
+		<select id="metatypeSelector">
+			<option>Please select a metatype</option>
+			<option value="human">Human</option>
+			<option value="elf">Elf</option>
+			<option value="dwarf">Dwarf</option>
+			<option value="ork">Ork</option>
+			<option value="troll">Troll</option>
+		</select>
 	</div>
-	<div class="attribute"><span id="agility">Agility: 5/6</span> <img class="arrowUp" src="images/up.png" /> <img class="arrowDown" src="images/down.png" /></div>
-	<div class="attribute"><span id="body">Body: 5/10</span> <img class="arrowUp" src="images/up.png" /> <img class="arrowDown" src="images/down.png" /></div>
 
-	<div id="attrTableDiv">
+	<div class="centeredDiv">
 		<table id="attrTable">
-			<tr><th></th>						<th>Current</th>	<th>Natural Max</th>	<th>Augmented Max</th></tr>
-			<tr><td class="attr">Body</td>		<td>##</td>			<td>##</td>				<td>##</td></tr>
-			<tr><td class="attr">Agility</td>	<td>##</td>			<td>##</td>				<td>##</td></tr>
-			<tr><td class="attr">Reaction</td>	<td>##</td>			<td>##</td>				<td>##</td></tr>
-			<tr><td class="attr">Strength</td>	<td>##</td>			<td>##</td>				<td>##</td></tr>
+			<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
+			<tr><td class="attr">Body</td>		<td>##</td>			<td>##</td>	</tr>
+			<tr><td class="attr">Agility</td>	<td>##</td>			<td>##</td>	</tr>
+			<tr><td class="attr">Reaction</td>	<td>##</td>			<td>##</td>	</tr>
+			<tr><td class="attr">Strength</td>	<td>##</td>			<td>##</td>	</tr>
 		</table>
 
 		<table id="attrTable">
-			<tr><th></th>						<th>Current</th>	<th>Natural Max</th>	<th>Augmented Max</th></tr>
-			<tr><td class="attr">Willpower</td>	<td>##</td>			<td>##</td>				<td>##</td></tr>
-			<tr><td class="attr">Logic</td>		<td>##</td>			<td>##</td>				<td>##</td></tr>
-			<tr><td class="attr">Intuition</td>	<td>##</td>			<td>##</td>				<td>##</td></tr>
-			<tr><td class="attr">Charisma</td>	<td>##</td>			<td>##</td>				<td>##</td></tr>
+			<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
+			<tr><td class="attr">Willpower</td>	<td>##</td>			<td>##</td></tr>
+			<tr><td class="attr">Logic</td>		<td>##</td>			<td>##</td></tr>
+			<tr><td class="attr">Intuition</td>	<td>##</td>			<td>##</td></tr>
+			<tr><td class="attr">Charisma</td>	<td>##</td>			<td>##</td></tr>
 		</table>
 	</div>
 </body>

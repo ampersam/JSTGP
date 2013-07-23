@@ -1,68 +1,18 @@
 
 
-#myBoxDiv {
-	background-color: purple;
-	width: 300px;
-	height: 100px;
-	display: block;
-	font-size: 3em;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#colorBoxes {
-	width: 680px;
-	height: 100px;
-	margin: auto;
-	margin-top: 200px;
-}
-
-#colorBoxes div {
-	float: left;
-	width: 150px;
-	text-align: center;
-	margin: 0 10px;
-}
-
-#greenDiv {
-	background-color: green;
-	color: white;
-}
-#blueDiv {
-	background-color: blue;
-	color: white;
-}
-#redDiv {
-	background-color: red;
-}
-#orangeDiv {
-	background-color: orange;
-}
-
-
-.attribute {
-	font-size:2em;
-}
-
-.arrowUp {
-	display: inline;
-	height: 20px;
-}
-
-.arrowDown {
-	display: inline;
-	height: 20px;
-}
-
-/*
-table CSS
-*/
-#attrTableDiv {
+.centeredDiv {
 	width: 1280px;
 	display: block;
 	margin: 0 auto 0 auto;
+	text-align: center;
 }
+/*
+table CSS
+*/
+#metatypeSelector {
+	font-size: 1em;
+}
+
 
 #attrTable {
 	text-align: center;
@@ -75,3 +25,5 @@ table CSS
 	text-align: right;
 	font-variant: small-caps;
 }
+
+document.getElementbyId("metatypeSelector").addEventListener('change', function(){console.log("changed")}, false);
