@@ -4,23 +4,21 @@
 </head>
 
 <body>
-	<pre>
-		<script src="
-		program.js" defer>
-		</script>
-	</pre>
+
+		<script src="program.js" defer></script>
 	
 	<div class="centeredDiv">
 		<div class="instruction">select a metatype from the list</div>
 		<img id="metatypeLock" src="images/unlocked.png" />&nbsp;
 		<select id="metatypeSelector">
-			<option>Please select a metatype</option>
+			<option value="none">Select a metatype</option>
 			<option value="human">Human</option>
 			<option value="elf">Elf</option>
 			<option value="dwarf">Dwarf</option>
 			<option value="ork">Ork</option>
 			<option value="troll">Troll</option>
 		</select>
+		<div class="instruction">changing metatype will reset attributes</div>
 	</div>
 
 	<br /><br />
@@ -31,19 +29,19 @@
 
 			<table class="attrTable">
 				<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
-				<tr><td class="attr">Body</td>		<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
-				<tr><td class="attr">Agility</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
-				<tr><td class="attr">Reaction</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
-				<tr><td class="attr">Strength</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
+				<tr><td class="attr">Body</td>		<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td>	</tr>
+				<tr><td class="attr">Agility</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td>	</tr>
+				<tr><td class="attr">Reaction</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td>	</tr>
+				<tr><td class="attr">Strength</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td>	</tr>
 				<tr></tr>
 				<tr><td class="secondaryAttr">Edge</td> <td class="secondary"><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>		<td class="secondary">##</td></tr>
 			</table>
 			<table class="attrTable">
 				<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
-				<tr><td class="attr">Willpower</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
-				<tr><td class="attr">Logic</td>		<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
-				<tr><td class="attr">Intuition</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
-				<tr><td class="attr">Charisma</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
+				<tr><td class="attr">Willpower</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td></tr>
+				<tr><td class="attr">Logic</td>		<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td></tr>
+				<tr><td class="attr">Intuition</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td></tr>
+				<tr><td class="attr">Charisma</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td><td>##</td></tr>
 				<tr></tr>
 				<tr><td class="secondaryAttr">Initiative</td> <td class="secondary">##</td>		<td class="secondary">+ 1d6</td></tr>
 			</table>

@@ -351,7 +351,7 @@ var redrawTables = function () {
 	populateAttributeTable();
 	populateSecondaryAttrTable();
 	populateLimitTable();
-}
+};
 
 
 
@@ -375,7 +375,7 @@ var refreshCalcs = function () {
 	characterObj.secondaryAttr.edge.initEdge();
 	characterObj.limits.calcLimits();
 	characterObj.condition.initCondition();
-}
+};
 
 //initial population from the metatype selection
 var metatypePopulate = function () {
@@ -383,8 +383,12 @@ var metatypePopulate = function () {
 	initCharacterObj(characterObj.metatype);
 	refreshCalcs();
 	redrawTables();
-	document.getElementById("tablesDiv").className = "";
-
+	if (characterObj.metatype === "none") {
+		document.getElementById("tablesDiv").className = "hidden";
+	}
+	else {
+		document.getElementById("tablesDiv").className = "";
+	}
 };
 
 
@@ -404,7 +408,7 @@ var lockUnlockMetatype = function () {
 		x.disabled = false;
 		document.getElementById("metatypeLock").src = "images/unlocked.png";
 	}
-}
+};
 
 var hideArrows = function (x) {
 	var el = getTable("current");
@@ -418,7 +422,7 @@ var hideArrows = function (x) {
 		el[i].previousSibling.className = "hidden";
 		el[i].nextSibling.className = "hidden";
 	}
-}
+};
 
 var toggleArrows = function () {
 	var i;
