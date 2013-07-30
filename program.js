@@ -321,7 +321,7 @@ var populateAttributeTable = function () {
 	array = getTable("attr");
 	for (var i = 0; i < array.length; i += 1) {
 		array[i].nextSibling.nextSibling.firstChild.nextSibling.innerHTML = characterObj.attr[attributeArray[i]];
-		array[i].nextSibling.nextSibling.nextSibling.nextSibling.innerHTML = characterObj.maxAttr[attributeArray[i]];
+		array[i].nextSibling.nextSibling.nextSibling.innerHTML = characterObj.maxAttr[attributeArray[i]];
 	}
 };
 
@@ -331,7 +331,7 @@ var populateSecondaryAttrTable = function () {
 	for (i = 0; i < array.length; i += 1) {
 		if (array[i].innerHTML === "Edge") {
 			array[i].nextSibling.nextSibling.firstChild.nextSibling.innerHTML = characterObj.secondaryAttr.edge.current;
-			array[i].nextSibling.nextSibling.nextSibling.nextSibling.innerHTML = characterObj.secondaryAttr.edge.natMax;
+			array[i].nextSibling.nextSibling.nextSibling.innerHTML = characterObj.secondaryAttr.edge.natMax;
 		}
 		else if (array[i].innerHTML === "Initiative") {
 			array[i].nextSibling.nextSibling.innerHTML = characterObj.secondaryAttr.initiative.dice;
@@ -387,7 +387,7 @@ var metatypePopulate = function () {
 		document.getElementById("tablesDiv").className = "hidden";
 	}
 	else {
-		document.getElementById("tablesDiv").className = "";
+		document.getElementById("tablesDiv").className = "notHidden";
 	}
 };
 
