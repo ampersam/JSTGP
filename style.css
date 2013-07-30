@@ -6,24 +6,99 @@
 	margin: 0 auto 0 auto;
 	text-align: center;
 }
-/*
-table CSS
-*/
+
+
+.limitsDiv {
+	width: 400px;
+	display: block;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.instruction {
+	font-family:Courier;
+	font-size: .6em;
+}
 #metatypeSelector {
 	font-size: 1em;
 }
 
+#metatypeLock {
+	height: 18px;
+	vertical-align: middle;
+}
 
-#attrTable {
+.headerArea {
+	height: 180px;
+	float: left;
+	position: relative;
+}
+
+.headerArea span {
+	font-family: Impact;
+	font-size:3em;
+	letter-spacing: .25em;
+	color: #9ed5d8;
+	height:70px;
+	position: absolute;
+	top: 50%;
+	margin-top: -33px;
+}
+
+th {
+	color: #9ed5d8;
+	font-family: Impact;
+	letter-spacing: .1em;
+	font-weight: lighter;
+}
+
+
+.attrTable {
 	text-align: center;
 	font-size: 1.5em;
 	border-spacing: 20px;
 	font-family: Futura;
 	display: inline-block;
 }
+
+.limitTable {
+	text-align: center;
+	font-size: 1.5em;
+	border-spacing: 20px;
+	font-family: Futura;
+	display: inline-block;
+	float: right;
+}
+
+.limit {
+	text-align: right;
+}
+
 .attr {
 	text-align: right;
 	font-variant: small-caps;
 }
+.secondaryAttr {
+	text-align: right;
+	font-variant: small-caps;
+	color: blue;
+}
+.secondary	{
+	color:blue;
+}
 
-document.getElementbyId("metatypeSelector").addEventListener('change', function(){console.log("changed")}, false);
+td img {
+	height: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+#selected {
+	color:#9ed5d8;
+	font-weight:bold;
+}
+.hidden {
+	display: none;
+}
+.notHidden {}

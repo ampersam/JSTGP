@@ -5,11 +5,14 @@
 
 <body>
 	<pre>
-		<script src="program.js" defer>
+		<script src="
+		program.js" defer>
 		</script>
 	</pre>
-
+	
 	<div class="centeredDiv">
+		<div class="instruction">select a metatype from the list</div>
+		<img id="metatypeLock" src="images/unlocked.png" />&nbsp;
 		<select id="metatypeSelector">
 			<option>Please select a metatype</option>
 			<option value="human">Human</option>
@@ -20,23 +23,47 @@
 		</select>
 	</div>
 
-	<div class="centeredDiv">
-		<table id="attrTable">
-			<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
-			<tr><td class="attr">Body</td>		<td>##</td>			<td>##</td>	</tr>
-			<tr><td class="attr">Agility</td>	<td>##</td>			<td>##</td>	</tr>
-			<tr><td class="attr">Reaction</td>	<td>##</td>			<td>##</td>	</tr>
-			<tr><td class="attr">Strength</td>	<td>##</td>			<td>##</td>	</tr>
-		</table>
+	<br /><br />
 
-		<table id="attrTable">
-			<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
-			<tr><td class="attr">Willpower</td>	<td>##</td>			<td>##</td></tr>
-			<tr><td class="attr">Logic</td>		<td>##</td>			<td>##</td></tr>
-			<tr><td class="attr">Intuition</td>	<td>##</td>			<td>##</td></tr>
-			<tr><td class="attr">Charisma</td>	<td>##</td>			<td>##</td></tr>
-		</table>
+	<div id="tablesDiv" class="hidden">
+		<div class="centeredDiv">
+			<div class="instruction">click on the current attribute values to modify</div>
+
+			<table class="attrTable">
+				<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
+				<tr><td class="attr">Body</td>		<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
+				<tr><td class="attr">Agility</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
+				<tr><td class="attr">Reaction</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
+				<tr><td class="attr">Strength</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td>	</tr>
+				<tr></tr>
+				<tr><td class="secondaryAttr">Edge</td> <td class="secondary"><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>		<td class="secondary">##</td></tr>
+			</table>
+			<table class="attrTable">
+				<tr><th></th>						<th>Current</th>	<th>Natural Max</th></tr>
+				<tr><td class="attr">Willpower</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
+				<tr><td class="attr">Logic</td>		<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
+				<tr><td class="attr">Intuition</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
+				<tr><td class="attr">Charisma</td>	<td><img src="images/up.png" /><span class="current">##</span><img src="images/down.png" /></td>			<td>##</td></tr>
+				<tr></tr>
+				<tr><td class="secondaryAttr">Initiative</td> <td class="secondary">##</td>		<td class="secondary">+ 1d6</td></tr>
+			</table>
+		</div>
+
+		<p />
+
+		<div class="limitsDiv">
+
+			<div class="headerArea"><span>Limits</span></div>
+			
+			<table class="limitTable">
+				<tr><td class="limit">Mental</td>	<td>##</td></tr>
+				<tr><td class="limit">Physical</td>	<td>##</td></tr>
+				<tr><td class="limit">Social</td>	<td>##</td></tr>
+			</table>	
+
+		</div>
 	</div>
+
 </body>
 
 </html>
